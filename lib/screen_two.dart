@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'package:getx_tutorial/screen_three.dart';
 
 class ScreenTwo extends StatelessWidget {
   var name;

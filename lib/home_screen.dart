@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_tutorial/screen_two.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -12,8 +11,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final ThemeData theme = ThemeData(
     scaffoldBackgroundColor: Colors.deepPurple,
-    appBarTheme: AppBarTheme(backgroundColor: Colors.amber),
-    bottomSheetTheme: BottomSheetThemeData(backgroundColor: Colors.orange),
+    appBarTheme: const AppBarTheme(backgroundColor: Colors.amber),
+    bottomSheetTheme: const BottomSheetThemeData(backgroundColor: Colors.orange),
   );
   @override
   Widget build(BuildContext context) {
@@ -102,7 +101,7 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               OutlinedButton(
                   onPressed: () {
-                    Get.updateLocale(Locale('ar', 'SA'));
+                    Get.updateLocale(const Locale('ar', 'SA'));
                   },
                   child: const Text('Arabic')),
               const SizedBox(
@@ -110,7 +109,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               OutlinedButton(
                   onPressed: () {
-                    Get.updateLocale(Locale('en', 'US'));
+                    Get.updateLocale(const Locale('en', 'US'));
                   },
                   child: const Text('English')),
             ],
