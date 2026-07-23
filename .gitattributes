@@ -1,0 +1,17 @@
+# Force-remove all native C++ files from repository language statistics
+windows/** linguist-vendored
+linux/** linguist-vendored
+android/** linguist-vendored
+ios/** linguist-vendored
+macos/** linguist-vendored
+
+# Explicitly ignore all C++ extension variations in those platforms
+*.cpp linguist-vendored
+*.h linguist-vendored
+*.cc linguist-vendored
+
+# Ensure Dart code generation and build folders are entirely hidden
+build/** linguist-generated=true
+.dart_tool/** linguist-generated=true
+*.g.dart linguist-generated=true
+*.freezed.dart linguist-generated=true
